@@ -1,0 +1,136 @@
+/*
+Theme Name: Xpatria
+Theme URI: n/a
+Author: Paul Johns and Matt Higgins
+Author URI: none
+Description: This theme was developed specifically for Xpatria Life Coaching by Paul Johns
+Version: n/a
+License: none
+License URI: n/a
+Tags: custom, Xpatria Life Coaching
+Text Domain: xpatria
+*/
+
+/*general styles*/
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #EB266B;
+  color: white;
+  display: inline-block;
+  padding: .5em 1em;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+/*masthead styles*/
+
+#masthead {
+  width: 100%;
+  background-color: #2A4D53;
+  display: table;
+  width: 100%;
+  padding: .5em 0;
+}
+
+.home #masthead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home.logged-in #masthead {
+  top: 32px;
+}
+
+#masthead nav {
+  display: table-cell;
+  width: 70%;
+  vertical-align: middle;
+}
+
+#masthead nav ul {
+  display: block;
+  padding-left: 0;
+  position: relative;
+}
+
+#masthead nav ul:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+#masthead nav li {
+  float: left;
+  display: inline-block;
+  padding: 0 1%;
+}
+
+#masthead nav li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#contact_info {
+  display: table-cell;
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#contact_info a {
+  color: #FFF;
+  font-size: 2em;
+  display: block;
+}
+
+#contact_info span {
+  display: block;
+  color: #eee;
+}
+
+/*front page styles*/
+
+#hero {
+  height: 100vh;
+  text-align: center;
+  background-color: #102E42;
+  color: #fff;
+}
+
+#hero .info {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
