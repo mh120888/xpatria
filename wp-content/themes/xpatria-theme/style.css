@@ -273,8 +273,65 @@ textarea {
   height: 9em;
 }
 
+/*footer styles*/
 
+footer nav {
+  width: 100%;
+  background-color: #FFFFFF;
+  text-align: center;
+}
 
+footer nav ul {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+footer nav li {
+  display: table-cell;
+  padding: 1em 2%;
+}
+
+footer nav li a {
+  color: #2A4D53;
+  text-transform: uppercase;
+}
+
+footer nav li a:hover {
+  color: #EB266B;
+}
+
+footer .contact-info a {
+  color: #FFFFFF;
+  font-size: 2em;
+  display: block;
+}
+footer .contact-info span {
+  text-transform: uppercase;
+  font-size: .63em;
+  display: inline-block;
+}
+
+.main-footer {
+  padding: 5em 1%;
+  background-color: #0a303d;
+  color: #fff;
+}
+
+.main-footer .table-cell {
+  vertical-align: middle;
+  text-align: center;
+  width: 33.33%;
+  padding-left: 1em 2%;
+}
+
+.footer-two {
+  background-color: #000;
+  color: #97e1e2;
+  text-align: center;
+  padding: 1em;
+}
 
 
 
