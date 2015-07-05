@@ -187,6 +187,53 @@ main section {
   padding: 0 2%;
 }
 
+/*bio section*/
+
+#bio {
+  text-align: left;
+}
+
+#bio .table-cell {
+  vertical-align: top;
+}
+
+#bio .photo {
+  width: 35%;
+}
+
+#bio .photo img {
+  width 90%;
+  background-color: #ddd;
+}
+
+#bio h1, #bio h2 {
+  margin: 0;
+}
+
+#bio p {
+  margin: 1.5em auto;
+}
+
+.bio-row {
+  margin-bottom: 2em;
+}
+
+.associations {
+  border-top: solid 1px #aaa192;
+  border-bottom: solid 1px #aaa192;
+}
+
+.associations img {
+  margin: 2em auto;
+  display: block;
+  text-align: center;
+}
+
+/*contact section*/
+
+#contact {
+  background-color: #eee;
+}
 
 
 

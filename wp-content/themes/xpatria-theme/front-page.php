@@ -75,10 +75,27 @@
 <?php endwhile; ?>
 </div>
 <a href='/blog/' class='btn'>Visit my blog</a>
-
-
 <?php endif; wp_reset_postdata(); ?>
+</section>
 
+<section id='bio'>
+  <div class='bio-row css-table'>
+    <div class='photo table-cell'>
+      <img src="/claire.jpg" alt='Claire Meurette'>
+    </div>
+    <div class='description table-cell'>
+      <h1>Claire Meurette</h1>
+      <h2>Life Coach</h2>
+      <p>I have been an expat for more than 15 years, and feel lucky that I was able to discover and live in 5 countries on three different continents.  I am an "accompanying spouse" which is fore and foremost an enabler - a crucial role in an expat life.  I am also a mother of three and a professional life and expat coach.</p>
+      <a href="/about/" class='btn'>Learn more about me</a>
+    </div>
+  </div>
+      <div class='associations'>
+      <img src="/images/associations.jpg" alt='association'>
+    </div>
+</section>
+
+<section id='contact'>
 
 </section>
 
