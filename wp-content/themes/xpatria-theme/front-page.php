@@ -49,6 +49,39 @@
 
 </section>
 
+<section id='blog'>
+
+  <header>
+    <h2>Recent Blog Articles</h2>
+  </header>
+  <div class='blog-row css-table'>
+    <?php
+
+      $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => '2'
+        );
+      $query = new WP_Query( $args );
+
+      ?>
+
+    <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+
+    <div class='individual-blog-post table-cell'>
+    <p class='blog-title'><?php the_title() ?></p>
+    <p class='blog-description'><?php the_content() ?></p>
+  </div>
+
+<?php endwhile; ?>
+</div>
+<a href='/blog/' class='btn'>Visit my blog</a>
+
+
+<?php endif; wp_reset_postdata(); ?>
+
+
+</section>
+
 <?php if ( have_posts() ) : while ( have_posts() ) :  the_post();  ?>
 
   <h1><?php the_title() ?></h1>

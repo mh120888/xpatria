@@ -80,6 +80,7 @@ header h2:after {
   display: table;
   width: 100%;
   padding: .5em 0;
+  z-index: 20;
 }
 
 .home #masthead {
@@ -142,6 +143,10 @@ header h2:after {
 
 /*front page styles*/
 
+main section {
+  padding: 3em 1%;
+}
+
 #hero {
   height: 100vh;
   text-align: center;
@@ -167,6 +172,20 @@ header h2:after {
   font-weight: 700;
 }
 
+/*blog styles*/
+
+#blog {
+  text-align: center;
+  background-color: #eee;
+}
+
+#blog .blog-row {
+  margin-bottom: 2em;
+}
+
+#blog .table-cell {
+  padding: 0 2%;
+}
 
 
 
