@@ -8,26 +8,44 @@
   </div>
 </section>
 
-<section id='ctas'>
-  <header>
-  <h2>Finding the right support is key</h2>
-  <p>As your coach I will provide you with a safe and confidential space to pause, reflect, and design strategies to ensure that you and your family can thrive during these exciting times</p>
-  </header>
+<main>
+  <section id='ctas'>
+    <header>
+      <h2>Finding the right support is key</h2>
+      <p>As your coach I will provide you with a safe and confidential space to pause, reflect, and design strategies to ensure that you and your family can thrive during these exciting times</p>
+    </header>
+    <div class='cta-row css-table'>
+      <?php
 
-  <?php
+      $args = array(
+        'post_type' => 'cta'
+        );
+      $query = new WP_Query( $args );
 
-  $args = array(
-    'post_type' => 'cta'
-  );
-  $query = new WP_Query( $args );
+      ?>
 
-  ?>
+      <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-  <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+      <div class='individual-cta table-cell'>
+        <?php 
 
-    <?php the_post_thumbnail( 'thumbnail' ); ?>
-    
-  <?php endwhile; endif; wp_reset_postdata(); ?>
+        $image = get_field('image');
+
+        if( !empty($image) ): ?>
+
+        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+      <?php endif; ?>
+      <p class='cta-title'><?php the_field('name') ?></p>
+      <p class='cta-description'><?php the_field('description') ?></p>
+    </div>
+
+
+  <?php endwhile; ?>
+</div>
+
+
+<?php endif; wp_reset_postdata(); ?>
 
 </section>
 
@@ -42,5 +60,6 @@
   there are no posts
 
 <?php endif; ?>
+</main>
 
 <?php get_footer(); ?>

@@ -40,6 +40,38 @@ a {
   background-color: #000;
 }
 
+.css-table {
+  display: table;
+  width: 100%;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: top;
+}
+
+header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header h2 {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+header h2:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 20%;
+  height: 1px;
+  background-color: #EB266B;
+}
+
 /*masthead styles*/
 
 #masthead {
@@ -125,6 +157,15 @@ a {
   -moz-transform: translateY(-50%);
 }
 
+/*cta styles*/
+
+#ctas {
+  text-align: center;
+}
+
+.cta-title {
+  font-weight: 700;
+}
 
 
 
