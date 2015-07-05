@@ -29,15 +29,18 @@ a {
   text-decoration: none;
 }
 
-.btn {
+.btn, input[type='submit'] {
   background-color: #EB266B;
   color: white;
   display: inline-block;
   padding: .5em 1em;
+  width: auto;
+  margin: 0 auto;
 }
 
-.btn:hover {
+.btn:hover, input[type='submit']:hover {
   background-color: #000;
+  cursor: pointer;
 }
 
 .css-table {
@@ -233,6 +236,41 @@ main section {
 
 #contact {
   background-color: #eee;
+  text-align: center;
+}
+
+#contact .table-cell {
+  padding: 0 1%;
+  width: 50%;
+}
+
+#contact .table-cell p {
+  margin: 0;
+  padding: 0;
+}
+
+#contact h1, #contact h2 {
+  margin: 0;
+}
+
+#contact h2:after {
+  display: none;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: none !important;
+  font-size: 1em;
+}
+
+input {
+  height: 2em;
+  margin: 0 auto .5em;
+}
+
+textarea {
+  height: 9em;
 }
 
 

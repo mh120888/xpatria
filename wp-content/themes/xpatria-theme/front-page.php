@@ -57,22 +57,22 @@
   <div class='blog-row css-table'>
     <?php
 
-      $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => '2'
-        );
-      $query = new WP_Query( $args );
+    $args = array(
+      'post_type' => 'post',
+      'posts_per_page' => '2'
+      );
+    $query = new WP_Query( $args );
 
-      ?>
+    ?>
 
     <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
     <div class='individual-blog-post table-cell'>
-    <p class='blog-title'><?php the_title() ?></p>
-    <p class='blog-description'><?php the_content() ?></p>
-  </div>
+      <p class='blog-title'><?php the_title() ?></p>
+      <p class='blog-description'><?php the_content() ?></p>
+    </div>
 
-<?php endwhile; ?>
+  <?php endwhile; ?>
 </div>
 <a href='/blog/' class='btn'>Visit my blog</a>
 <?php endif; wp_reset_postdata(); ?>
@@ -90,26 +90,21 @@
       <a href="/about/" class='btn'>Learn more about me</a>
     </div>
   </div>
-      <div class='associations'>
-      <img src="/images/associations.jpg" alt='association'>
-    </div>
+  <div class='associations'>
+    <img src="/images/associations.jpg" alt='association'>
+  </div>
 </section>
 
 <section id='contact'>
+  <header>
+    <h1>Get in touch</h1>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+  </header>
+  <?php echo do_shortcode('[contact-form-7 id="47" title="Contact form 1"]'); ?>
 
 </section>
 
-<?php if ( have_posts() ) : while ( have_posts() ) :  the_post();  ?>
 
-  <h1><?php the_title() ?></h1>
-  <p>front pa</p>
-  <p><?php the_content() ?></p>
-
-<?php endwhile; else: ?>
-
-  there are no posts
-
-<?php endif; ?>
 </main>
 
 <?php get_footer(); ?>
