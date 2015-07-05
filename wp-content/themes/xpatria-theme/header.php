@@ -9,24 +9,26 @@
   <?php wp_head(); ?>
 </head>
 <div id='masthead'>
-<nav>
-  <?php
+  <div class='main'>
+    <nav>
+      <?php
 
-  $defaults = array(
-    'container' => false,
-    'theme_location' => 'primary-menu',
-    'menu_class' => false,
-  );
+      $defaults = array(
+        'container' => false,
+        'theme_location' => 'primary-menu',
+        'menu_class' => false,
+        );
 
-  wp_nav_menu( $defaults );
+      wp_nav_menu( $defaults );
 
-  ?>
+      ?>
 
-</nav>
-<div id='contact_info'>
-  <a href='tel:661-123-4567'>661-123-4567</a>
-  <span>Call for a Free Discovery Session</span>
+    </nav>
+    <div id='contact_info'>
+      <a href='tel:661-123-4567'>661-123-4567</a>
+      <span>Call for a Free Discovery Session</span>
+    </div>
+  </div>
 </div>
-</div>
-  
+
 <body <?php body_class(); ?> >
