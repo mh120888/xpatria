@@ -239,12 +239,16 @@ main section {
   text-align: center;
 }
 
-#contact .table-cell {
+form {
+  text-align: center;
+}
+
+form .table-cell {
   padding: 0 1%;
   width: 50%;
 }
 
-#contact .table-cell p {
+form .table-cell p {
   margin: 0;
   padding: 0;
 }
@@ -260,7 +264,7 @@ main section {
 input, textarea {
   width: 100%;
   padding: 0.5em;
-  border: none !important;
+  border: solid 1px #eee;
   font-size: 1em;
 }
 
@@ -270,7 +274,7 @@ input {
 }
 
 textarea {
-  height: 9em;
+  height: calc(9em + 4px);
 }
 
 /*footer styles*/
@@ -307,6 +311,7 @@ footer .contact-info a {
   font-size: 2em;
   display: block;
 }
+
 footer .contact-info span {
   text-transform: uppercase;
   font-size: .63em;
