@@ -13,9 +13,14 @@ Text Domain: xpatria
 
 /*general styles*/
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -41,6 +46,13 @@ a {
   padding: .5em 1em;
   width: auto;
   margin: 0 auto;
+}
+
+input[type='submit'] {
+  height: 48px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
 }
 
 .btn:hover, input[type='submit']:hover {
@@ -85,7 +97,7 @@ header h2:after {
 #masthead {
   width: 100%;
   background-color: #2A4D53;
-  padding: .5em 0;
+  padding: 1.5em 0;
   z-index: 20;
 }
 
@@ -113,7 +125,7 @@ header h2:after {
 
 #masthead nav ul {
   display: block;
-  padding-left: 0;
+  padding: 0;
   position: relative;
 }
 
@@ -196,6 +208,7 @@ main section {
 
 #blog .table-cell {
   padding: 0 2%;
+  line-height: 2;
 }
 
 /*bio section*/
@@ -223,6 +236,7 @@ main section {
 
 #bio p {
   margin: 1.5em auto;
+  line-height: 2;
 }
 
 .bio-row {
@@ -291,6 +305,7 @@ footer nav {
   width: 100%;
   background-color: #FFFFFF;
   text-align: center;
+  border-top: solid 1px #eee;
 }
 
 footer nav ul {
@@ -298,6 +313,7 @@ footer nav ul {
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
+  padding-left: 0;
 }
 
 footer nav li {
@@ -336,7 +352,7 @@ footer .contact-info span {
   vertical-align: middle;
   text-align: center;
   width: 33.33%;
-  padding-left: 1em 2%;
+  padding: 1em 2%;
 }
 
 .footer-two {
@@ -346,6 +362,99 @@ footer .contact-info span {
   padding: 1em;
 }
 
+.social-media ul {
+  display: block;
+  padding: 0;
+}
 
+.social-media li {
+  display: block
+}
+
+.social-media a {
+  color: #FFFFFF;
+}
+
+.social-media a:hover {
+  color: #EB266B;
+}
+
+@media (max-width: 750px) {
+  #masthead .main, #masthead nav, #contact_info {
+    display: block;
+    width: 100%;
+  }
+
+  #hero {
+    height: 400px;
+  }
+
+  #masthead nav {
+    display: none;
+  }
+
+  #masthead {
+    padding: .5em 0;
+  }
+
+  .cta-row.css-table, .cta-row .table-cell {
+    display: block;
+    width: 100%;
+  }
+
+  .cta-row .table-cell {
+    padding: 1em;
+    margin: 0 auto 1em;
+  }
+
+  .blog-row .css-table, .blog-row .table-cell {
+    display: block;
+    width: 100%;
+  }
+
+  .blog-row .table-cell {
+    margin: 0 auto 2em;
+    padding: 1em;
+    max-width: 600px;
+  }
+
+  .bio-row .css-table, .bio-row .table-cell {
+    display: block;
+    width: 100% !important;
+    padding: 1em;
+    text-align: center;
+  }
+
+  #bio .photo img {
+    margin: 0 auto;
+  }
+
+  form .table-cell {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-footer {
+    padding: 1em 1%;
+  }
+
+  footer nav ul, footer nav li {
+    display: block;
+    width: 100%;
+  }
+
+  footer .css-table, footer .table-cell {
+    display: block;
+    width: 100% !important; 
+    padding: 1em;
+  }
+
+  footer .table-cell {
+    margin: 0 auto 1em;
+  }
+}
 
 
